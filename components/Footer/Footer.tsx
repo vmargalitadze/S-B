@@ -1,8 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
-import logo from '@/public/about/midlogo.jpg'
-import Image from 'next/image'
-import { FaFacebook, FaWhatsapp, FaEnvelope, FaPhone, FaMapMarkerAlt, FaFacebookF, FaInstagram, FaYoutube, FaWhatsappSquare } from 'react-icons/fa'
+
+import {  FaFacebook, FaInstagram, FaYoutube, FaWhatsappSquare } from 'react-icons/fa'
 
 function Footer() {
   return (
