@@ -21,8 +21,8 @@ const products = [
 
 function Products() {
   return (
-<section className="mb-5 mt-5 pt-16  pb-16">
-  <div className="container mx-auto">
+<section className=" mt-5 pt-16  pb-16">
+  <div className="container px-6 mx-auto">
     {/* Header Section */}
     <div className="flex flex-col lg:flex-row justify-between items-center mb-6 lg:mb-0">
       <h2 className="text-xl lg:text-[30px] leading-tight text-center mb-4 font-semibold">
@@ -46,10 +46,10 @@ function Products() {
      <div key={i.id} className="max-w-sm w-full rounded-2xl shadow-xl mb-9 relative group">
        
        {/* Image Container */}
-       <div className="w-full h-96 cursor-pointer overflow-hidden relative rounded-t-2xl">
+       <div className="w-full h-96 cursor-pointer overflow-hidden relative rounded-lg">
          <Image 
            fill 
-           className="w-full h-full object-cover group-hover:scale-110 duration-500 rounded-t-2xl" 
+           className="w-full h-full object-cover group-hover:scale-110 duration-500 rounded-lg" 
            src={i.image} 
            alt="productImg" 
          />

@@ -67,12 +67,12 @@ function PageContent() {
 
           <div className="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 py-10">
             {currentPageProducts.map((i) => (
-              <div key={i.id} className="max-w-sm w-full rounded-2xl shadow-xl mb-9 relative group">
+              <div key={i.id} className="max-w-sm w-full rounded-lg shadow-xl mb-9 relative group">
             
-                <div className="w-full h-96 cursor-pointer overflow-hidden relative rounded-t-2xl">
+                <div className="w-full h-96 cursor-pointer overflow-hidden relative rounded-lg">
                   <Image
                     fill
-                    className="w-full h-full object-cover group-hover:scale-110 duration-500 rounded-t-2xl"
+                    className="w-full h-full object-cover group-hover:scale-110 duration-500 rounded-lg"
                     src={i.image}
                     alt="productImg"
                   />

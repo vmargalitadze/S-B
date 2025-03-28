@@ -2,51 +2,77 @@ import Link from 'next/link'
 import React from 'react'
 import logo from '@/public/about/midlogo.jpg'
 import Image from 'next/image'
-import { FaFacebook } from 'react-icons/fa'
-import { FaWhatsapp } from 'react-icons/fa'
+import { FaFacebook, FaWhatsapp, FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa'
+
 function Footer() {
   return (
-  <>
-  <footer className="bgc  text-black  pb-8 px-4">
-    <div className=" border-t   border-gray-800 mb-14"></div>
-    <div className="mx-auto px-4 container overflow-hidden  flex flex-col lg:flex-row justify-between">
-        <Link href="/" className="block mr-4 w-1/3">
-            <Image src={logo} className="w-40 ml-4 lg:ml-0" alt="logo" />
-        </Link>
-        <div className="w-2/3 block sm:flex text-sm mt-6 lg:mt-0">
-       
-            <ul className="text-gray-700 list-none p-0 font-thin flex flex-col text-left w-full">
-                <li className="inline-block py-2 px-3 textColor uppercase text-2xl font-medium tracking-wide"> კომპანია</li>
-                <li><Link href="/" className="inline-block text-[20px] py-2 px-3 text-black hover:text-white no-underline">მთავარი</Link>
-                </li>
-                <li><Link href="/about" className="inline-block text-[20px] py-2 px-3 text-black hover:text-white no-underline">ჩვენს შესახებ</Link></li>
-                <li><Link href="/all" className="inline-block text-[20px] py-2 px-3 text-black hover:text-white no-underline">პროდუქტები</Link></li>
-            </ul>
-            <ul className="text-gray-700 list-none p-0 font-thin flex flex-col text-left w-full">
-                <li className="inline-block py-2 px-3 textColor uppercase text-2xl font-medium tracking-wide">კონტაქტები</li>
-                <li><p className="inline-block py-2 px-3 text-black hover:text-white no-underline">ტელ ++</p></li>
-                <li><p  className="inline-block py-2 px-3 text-black hover:text-white no-underline">მეილი ++</p></li>
-                <li><p  className="inline-block py-2 px-3 text-black hover:text-white no-underline">მისამართი ++</p></li>
-                
-            </ul>
-            <div className="text-gray-700 flex flex-col w-full">
-                <div className="inline-block py-2 px-3 textColor uppercase text-2xl font-medium tracking-wide">თვალი გვადევნე</div>
-                <div className="flex pl-4 justify-start mt-2">
-                    <Link className="block  items-center text-black hover:text-white mr-6 no-underline" href="#">
-                        <FaFacebook className='w-5 h-5' />
-                        </Link>
-                    <Link className="block  items-center text-black hover:text-white mr-6 no-underline" href="#">
-                       <FaWhatsapp className='w-5 h-5' />
-                    </Link>
-                   
-                </div>
+    <footer className="relative bg-black text-white pt-8 pb-6">
+      <div className="container mx-auto px-4">
+        <div className="flex flex-wrap justify-center lg:justify-between text-center lg:text-left">
+          
+          {/* Left Side: Logo and Social Media Icons */}
+          <div className="w-full lg:w-4/12 px-4 mb-6 lg:mb-0  flex flex-col items-center ">
+            {/* Logo */}
+            <Image 
+              src={logo} 
+              width={50} 
+              alt="logo" 
+              className="transition-all duration-200 mb-4"
+            />
+            
+            {/* Social Media Icons */}
+            <div className="flex space-x-6">
+              <a href="https://facebook.com" target="_blank" className=" hover:text-blueGray-800">
+                <FaFacebook size={30} />
+              </a>
+              <a href="https://wa.me" target="_blank" className="text-blueGray-600 hover:text-blueGray-800">
+                <FaWhatsapp size={30} />
+              </a>
             </div>
+          </div>
+
+          {/* Right Side: Links and Contact Information */}
+          <div className="w-full lg:w-7/12 px-4">
+            <div className="flex flex-wrap justify-center lg:justify-start">
+              {/* Sleep&Bed Links */}
+              <div className="w-full lg:w-4/12 px-4 mb-4 lg:mb-0">
+                <span className="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Sleep&Bed</span>
+                <ul className="list-unstyled text-center lg:text-left">
+                  <li>
+                    <Link className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="/">მთავარი</Link>
+                  </li>
+                  <li>
+                    <Link className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="/all">პროდუქტები</Link>
+                  </li>
+                  <li>
+                    <Link className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="/about">ჩვენს შესახებ</Link>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Contact Information */}
+              <div className="w-full lg:w-4/12 px-4">
+                <span className="block uppercase text-blueGray-500 text-sm font-semibold mb-2">კონტაქტები</span>
+                <ul className="list-unstyled text-center lg:text-left">
+                  <li className="flex items-center justify-center lg:justify-start space-x-2 mb-2">
+                    <FaMapMarkerAlt className="text-blueGray-600" />
+                    <p className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm">მისამართი</p>
+                  </li>
+                  <li className="flex items-center justify-center lg:justify-start space-x-2 mb-2">
+                    <FaPhone className="text-blueGray-600" />
+                    <p className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm">ტელეფონი</p>
+                  </li>
+                  <li className="flex items-center justify-center lg:justify-start space-x-2">
+                    <FaEnvelope className="text-blueGray-600" />
+                    <p className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm">მეილი</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-   
-</footer>
-  
-  </>
+      </div>
+    </footer>
   )
 }
 

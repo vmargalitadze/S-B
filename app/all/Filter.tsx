@@ -21,7 +21,7 @@ const Filter: React.FC<CategoryFilterProps> = ({ selectedCategory, setSelectedCa
               <button
                 key={category}
                 onClick={() => setSelectedCategory(category === "ყველა" ? "" : category)}
-                className={`outline-none rounded cursor-pointer transition-all duration-150 ease-in-out border border-solid border-black px-4 py-2 sm:px-6 sm:py-3 text-[14px] sm:text-base uppercase focus:outline-none hover:bg-black hover:text-white ${
+                className={`outline-none rounded-lg cursor-pointer transition-all duration-150 ease-in-out border border-solid border-black px-4 py-2 sm:px-6 sm:py-3 text-[14px] sm:text-base uppercase focus:outline-none hover:bg-black hover:text-white ${
                   isActive ? "bg-black text-white" : "text-black"
                 }`}
               >

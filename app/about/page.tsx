@@ -48,18 +48,18 @@ function Page() {
               </div>
             </div>
 
-            <section className="py-14 lg:py-24 relative">
+            <section className="py-14 rounded-lg bg-black text-white lg:py-24 relative">
               <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-9">
                   <div className="img-box">
-                    <Image src={bg2} alt="About Us tailwind page" className="max-lg:mx-auto object-cover" />
+                    <Image src={bg2} alt="About Us tailwind page" className="max-lg:mx-auto rounded-lg object-cover" />
                   </div>
                   <div className="lg:pl-[100px] flex items-center">
                     <div className="data w-full">
                       <h2 className="text-xl lg:text-[30px] leading-tight text-center mb-4 font-semibold">
                         ჩვენი ისტორია
                       </h2>
-                      <p className="text-lg leading-8 text-gray-500 text-center max-w-2xl mx-auto">
+                      <p className="text-lg leading-8  text-center max-w-2xl mx-auto">
                       2011 წელს, Mitsan Group-ის კომპანიის სახით და Vizyon Mattress-ის სახელით დაარსებული Sleep&Bed, დღემდე სწრაფად მზარდი ბრენდის სახით განაგრძობს განვითარებას და 4 კონტინენტზე, 25-ზე მეტ ქვეყანაში, ასობით სარეალიზაციო წერტილთან და რამდენიმე ათეული მაღაზიით ერთვის. ჩვენი წარმატება განპირობებულია შიდა წარმოების მაღალი ხარისხის სპონჯებისა და ფელტების წარმოებით, 
                       სწრაფი წარმოების ციკლებით ინტეგრირებული ფაბრიკების მეშვეობით და ძლიერი, ორიგინალური პროდუქტის კოლექციით.
                       </p>
