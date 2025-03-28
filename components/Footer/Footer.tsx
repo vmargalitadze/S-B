@@ -32,17 +32,17 @@ function Footer() {
            
         </nav>
         <div className="flex justify-center mt-8 space-x-6">
-            <a href="#" className="text-white">
+            <a href="#" className="text-white text-2xl ">
                 <FaFacebook />
             </a>
-            <a href="#" className="text-white">
+            <a href="#" className="text-white text-2xl">
                 <FaInstagram />
             </a>
-            <a href="#" className="text-white">
+            <a href="#" className="text-white text-2xl">
                <FaYoutube />
             </a>
            
-            <a href="#" className="text-white">
+            <a href="#" className="text-white text-2xl">
                <FaWhatsappSquare />
             </a>
         </div>

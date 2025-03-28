@@ -46,15 +46,19 @@ function PageContent() {
         <div
           className="flex h-[50vh] items-center flex-wrap bg-overlay sm:p-6 before:bg-title before:bg-opacity-70"
           style={{ backgroundImage: "url('/prod/breadcumb.jpg')" }}
+
         >
-          <div className="text-center z-50 w-full">
-            <h2 className="text-white text-[25px] md:text-[50px] mb-7 lg:mb-0 font-normal text-center">
-              პროდუქტები
-            </h2>
-            <p className="max-w-[672px] text-white mx-auto lg:mb-[65px] lg:text-xl">
+            <div className="text-center z-50 w-full">
+              <h2 className="text-white text-[25px] md:text-[50px] font-normal text-center">
+                პროდუქტები
+              </h2>
+              <p className="max-w-[672px] text-white mx-auto lg:text-xl">
               საუკეთესო ძილი ყველასთვის
-            </p>
+              </p>
+            </div>
+            <div className="flex h-[50vh] items-center flex-wrap bg-overlay sm:p-6 before:bg-title before:bg-opacity-70 aboutbg">
           </div>
+      
         </div>
       </div>
       
