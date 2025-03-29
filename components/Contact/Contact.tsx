@@ -2,7 +2,7 @@ import React from 'react';
 import { FaEnvelope, FaPhone,  FaClock, FaMapMarkerAlt } from 'react-icons/fa';
 function Contact() {
   return (
-    <section className="mt-5 pt-16 pb-16 text-white ">
+    <section className="  pb-16 text-white ">
     <div className="container px-6 mx-auto">
       <div className="">
         <h2 className="text-black text-xl  lg:text-[30px] leading-tight text-center mb-10 font-semibold">საკონტაქტო ინფორმაცია</h2>
@@ -28,7 +28,7 @@ function Contact() {
   <div className="flex items-center mb-4">
     <FaClock className="text-2xl mr-4 text-white" />
     <div className="text-[18px]  lg:text-[20px] leading-relaxed  text-white">
-      <p>ორშაბათი-პარასკევი: 09:00 - 18:00</p>
+      <p>ორშაბათი-პარასკევი: <br className='block lg:hidden'/> 09:00 - 18:00</p>
       <p>შაბათი: 10:00 - 14:00</p>
       <p>კვირა: დახურული</p>
     </div>
