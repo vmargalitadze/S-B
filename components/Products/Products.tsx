@@ -21,7 +21,7 @@ const products = [
 
 function Products() {
   return (
-<section className=" mt-5 pt-16  pb-16">
+<section className=" mt-5 pt-16  pb-13  lg:pb-16 ">
   <div className="container px-6 mx-auto">
     {/* Header Section */}
     <div className="flex flex-col lg:flex-row justify-between items-center mb-6 lg:mb-0">
