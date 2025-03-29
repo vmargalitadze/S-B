@@ -56,8 +56,7 @@ function PageContent() {
               საუკეთესო ძილი ყველასთვის
               </p>
             </div>
-            <div className="flex h-[50vh] items-center flex-wrap bg-overlay sm:p-6 before:bg-title before:bg-opacity-70 aboutbg">
-          </div>
+         
       
         </div>
       </div>
