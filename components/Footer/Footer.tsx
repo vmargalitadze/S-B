@@ -24,11 +24,7 @@ function Footer() {
                 </Link>
             </div>
           
-            <div className="px-5 py-2">
-                <Link href="/contacts" className="text-base leading-6 text-white">
-                    კონტაქტები
-                </Link>
-            </div>
+         
            
         </nav>
         <div className="flex justify-center mt-8 space-x-6">

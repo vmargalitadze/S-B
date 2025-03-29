@@ -1,4 +1,5 @@
 
+import Contact from "@/components/Contact/Contact";
 import Hero from "@/components/Hero/Hero";
 import Info from "@/components/Info/Info";
 import Products from "@/components/Products/Products";
@@ -13,7 +14,7 @@ export default function Home() {
    <Hero />
    <Info />
    <Products />
-
+    <Contact />
    </div>
    </>
   );
